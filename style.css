@@ -36,8 +36,10 @@ height: 100%;
     width: 50vw;
 }
 
-.header-links > a{
-    
+.header-links{
+    width: 100%;
+
+    text-align: center;
 }
 
 /*  MAIN CONTENT */
@@ -131,7 +133,6 @@ height: 100%;
 .form-quest-container > #input-name{
     font-size: x-large;
 }
-
 
 /* FOOTER */
 
