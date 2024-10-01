@@ -1,13 +1,14 @@
+
 /* CABEÇALHO */
 
 #header-container{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    position: fixed;
 
     background-color: white;
 
-    position: fixed;
     width: 100vw;
     height: 100px;
 }
@@ -25,24 +26,23 @@
     height: 50px;
 }
 #logo-img{
-width: 100%;
-height: 100%;
+    width: 100%;
+    height: 100%;
 }
-
 #header-links-container{
     display: flex;
     align-items: center;
     justify-content: space-around;
+
     width: 50vw;
 }
-
 .header-links{
     width: 100%;
-
     text-align: center;
 }
 
 /*  MAIN CONTENT */
+
 #content-area-container{
     display: flex;
     align-items: center;
@@ -52,14 +52,7 @@ height: 100%;
     width: 100%;
 }
 
-
-#footer-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* ELEMENTOS COM CLASS, OU SEJA, QUE HÁ MAIS DE UM */
+/* ÁREA DE CONTEÚDO */
 
 .content-area{
     display: flex;
@@ -71,29 +64,77 @@ height: 100%;
 }
 
 /* PRIMEIRA SESSÃO */
+
 #Info{
-    background-color: #2176ae;
+    background-color: var(--color-primary-darkblue);
+    /* background-color: #2176ae; */
+}
+.content-info-container{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    
+    height: 80%;
+    width: 50%;
+}
+.info-area-container:first-child{
+    position: relative;
+    left: 100px;
+}
+.info-area-container:last-child{
+    position: relative;
+    left: 100px;
+}
+.content-info-container > article:hover{
+    opacity: 0.8;
+    scale: 1.1;
+}
+
+
+.info-area-container{
+    
+}
+.info-title-container{
+    
+}
+.info-title{
+    font-size: x-large;
+    color: var(--color-primary-blue);
+    
+}
+.info-text-container{
+    
+}
+.info-text{
+    font-size: x-large;
+    color: white;
 }
 
 /* SEGUNDA SESSÃO */
+
 #examples{
-    background-color: #57b8ff;
+    background-color: var(--color-primary-blue);
+    /* background-color: #57b8ff; */
     
 }
 
 /* TERCEIRA SESSÃO */
-#register{
-    
-    background-color: #fe6847;
+
+#contact{
+    background-color: var(--color-primary-red);
+    /* background-color: #fe6847; */
 }
 .form-container{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-direction: column;
     
     width: 75%;
     height: 75%;
 
+    background-color: var(--color-primary-brown);
     background-color: #fbb13c;
     color: white;
 
@@ -102,11 +143,7 @@ height: 100%;
 .form-container > form{
     width: 50%;
     height: 100%;
-
-
 }
-
-
 .form-quest-container{
     display: flex;
     align-items: center;
@@ -123,7 +160,6 @@ height: 100%;
     align-content: start;
     color: white;
 }
-
 .form-quest-container > #input-name{
     font-size: x-large;
 }
@@ -137,14 +173,13 @@ height: 100%;
 /* FOOTER */
 
 #footer-container{
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
     justify-content: space-around;
 
     background-color: #866d0d;
 
 }
-
 .footer-contents{
     display: flex;
     align-items: center;
